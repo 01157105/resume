@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --fg: #1a1a1a;
+      --muted: #666;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--fg);
+      margin: 0;
+      background-color: #fafafa;
+    }
+
+    .wrap {
+      max-width: 780px;
+      margin: 2rem auto;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1rem;
+    }
+
+    img.avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--border);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0.2rem 0 0.5rem;
+    }
+
+    .links a {
+      margin-right: 0.75rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-top: 1.5rem;
+    }
+
+    h2 {
+      border-left: 4px solid var(--accent);
+      padding-left: 0.5rem;
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .item {
+      margin: 0.75rem 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    ul {
+      margin: 0.3rem 0 0.3rem 1.25rem;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .chip {
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      background: #f9fafb;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      img.avatar {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="me.jpg" alt="Your Photo" />
+      <div>
+        <h1>楊子宏</h1>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>學生</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="item">
+        <ul>
+          <li>無</li>
+        </ul>
+      </div>
+      <div class="item">
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <strong>海大 — 大四</strong>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="item">
+        <strong>無
+        </strong>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">YOLOv8</span><span class="chip">Jetson Orin Nano</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">JavaScript</span><span class="chip">HTML/CSS</span><span class="chip">C/C++</span>
+        <span class="chip">Python</span><span class="chip">Linux</span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
